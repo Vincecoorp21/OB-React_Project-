@@ -3,6 +3,8 @@ import { LEVELS } from '../../models/levels.enum';
 import { Task } from '../../models/task.class';
 import TaskComponent from '../pure/task';
 
+import '../../styles/task.scss';
+
 const TaskListComponent = () => {
   const defaultTask = new Task(
     'Example',
@@ -35,7 +37,7 @@ const TaskListComponent = () => {
   return (
     <div>
       <div>
-        <h1>Your Tasks:</h1>
+        <h1 className=''>Your Tasks:</h1>
       </div>
       {/* TODO: Aplicar un For/Map para renderizar un a lista */}
       <TaskComponent task={defaultTask}></TaskComponent>
