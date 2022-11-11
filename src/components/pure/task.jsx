@@ -16,12 +16,28 @@ const TaskComponent = ({ task }) => {
   }, [task]); //corchetes, que se ejecute una vez. Ausencia de corchetes, que se ejecute todas las veces.
 
   return (
-    <div>
-      <h2 className='task-name'>Nombre: {task.name}</h2>
-      <h3>Descripción: {task.description}</h3>
-      <h4>Level: {task.level}</h4>
-      <h5>This task is: {task.completed ? 'COMPLETED' : 'PENDING'}</h5>
-    </div>
+    <tr className='fw-normal'>
+      <th>
+        <span className='ms-2'>{task.name}</span>
+      </th>
+      <td className='align-middle'>
+        <span>{task.description}</span>
+      </td>
+      <td className='align-middle'>
+        {/**Sustituir por un badge */}
+        <span>{task.level}</span>
+      </td>
+      <td className='align-middle'>
+        {/**Sustituir por un iconos */}
+        <span>{task.completed}</span>
+      </td>
+    </tr>
+    // <div>
+    //   <h2 className='task-name'>Nombre: {task.name}</h2>
+    //   <h3>Descripción: {task.description}</h3>
+    //   <h4>Level: {task.level}</h4>
+    //   <h5>This task is: {task.completed ? 'COMPLETED' : 'PENDING'}</h5>
+    // </div>
   );
 };
 
