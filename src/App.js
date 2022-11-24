@@ -8,6 +8,7 @@ import Ejemplo2 from './hooks/Ejemplo2';
 import MiComponenteConContexto from './hooks/Ejemplo3';
 import Ejemplo4 from './hooks/Ejemplo4';
 import GreetingStyled from './components/pure/greetingStyled';
+import Father from './components/container/father';
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
       {/* <MiComponenteConContexto /> */}
       {/* <GreetingStyled name='Vince' /> */}
       {/* </header> */}
+      {/**Gestión de eventos */}
+      <Father />
     </div>
   );
 }
