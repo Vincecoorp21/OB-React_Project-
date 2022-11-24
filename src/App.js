@@ -33,7 +33,7 @@ function App() {
       {/* <GreetingStyled name='Vince' /> */}
       {/* </header> */}
       {/**Gestión de eventos */}
-      <Father />
+      {/* <Father /> */}
     </div>
   );
 }
