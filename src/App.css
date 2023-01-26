@@ -40,3 +40,10 @@
 h1 {
   color: tomato;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
